@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CreateWorldObject",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CreateWorldObject",
+  "parent":{
+    "name":"Word",
+    "path":"folders/Scripts/Word.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

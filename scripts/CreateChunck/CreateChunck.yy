@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CreateChunck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CreateChunck",
+  "parent":{
+    "name":"Word",
+    "path":"folders/Scripts/Word.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"IndiceToPos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"IndiceToPos",
+  "parent":{
+    "name":"Word",
+    "path":"folders/Scripts/Word.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
