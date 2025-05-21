@@ -1,4 +1,6 @@
 function CreateChunck(_x,_y) constructor{
+  ind = new Vector2(_x,_y)
+  
   //setando a posição da chunck na room
   x = _x * 0.5 * (CHUNCK_WIDTH * SELL_SIZE) + _y * -0.5 * (CHUNCK_WIDTH * SELL_SIZE) 
   y = _x * 0.25 * (CHUNCK_HEIGHT * SELL_SIZE) + _y * 0.25 * (CHUNCK_HEIGHT * SELL_SIZE)
@@ -56,10 +58,17 @@ function CreateChunck(_x,_y) constructor{
   }
   
   
+  baseGround = ceil(CHUNCK_DEPTH*.5)
+  
   function Generate(_x,_y){
     for(var _xx=0; _xx<CHUNCK_WIDTH; _xx++){
      for(var _yy=0; _yy<CHUNCK_HEIGHT;_yy++){
-        blocks[_xx][_yy][16] = new CreateWorldObject(_xx,_yy,16,spr_stone)
+        var _pointX = ind.x*CHUNCK_WIDTH+_xx
+        var _pointY = ind.y*CHUNCK_HEIGHT+_yy
+        var _newNoiseValue = GetNewYNoise(global.worldNoise,_pointX,_pointY,30)
+        var _newDepth = baseGround+_newNoiseValue
+        _newDepth = clamp(_newDepth,0,99999)
+        blocks[_xx][_yy][_newDepth] = new CreateWorldObject(_xx,_yy,16,spr_stone)
       } 
     }
   }

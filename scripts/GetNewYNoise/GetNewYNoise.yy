@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GetNewYNoise",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetNewYNoise",
+  "parent":{
+    "name":"Word",
+    "path":"folders/Scripts/Word.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

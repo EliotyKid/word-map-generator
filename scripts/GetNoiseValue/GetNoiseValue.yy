@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GetNoiseValue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetNoiseValue",
+  "parent":{
+    "name":"PerlinNoise",
+    "path":"folders/Scripts/PerlinNoise.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

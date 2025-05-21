@@ -5,3 +5,5 @@ for(var xx=0; xx<N_CHUNCKS_W; xx++){
     global.world[xx][yy].Draw()
   }
 }
+
+if keyboard_check_pressed(vk_space) room_restart()
